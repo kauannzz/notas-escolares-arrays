@@ -3,10 +3,7 @@ const prompt = require("prompt-sync")();
 //Array vazia, o usuario ainda não inseriu nada
 let storageNotes = []
 
-    //Executo a função criada,
-    createNotes()
-
-    //Se você errar na hora de por a nota, ele não vai contabilizar o restante das notas. Você pode inserir mas não irá sair os resultados (A..B..C..E...etc)
+//Se você errar na hora de por a nota, ele não vai contabilizar o restante das notas. Você pode inserir mas não irá sair os resultados (A..B..C..E...etc)
 function createNotes(){
     //For que permite que o usuario consiga digitar 6X, não mais que isso. Pra alterar mude o *6* dentro do for
     for (i = 0; i < 6; i++){
@@ -48,7 +45,11 @@ console.log(storageNotes)
 
 //Função pra checar se realmente o que foi digitado é um número
 function isNumber(n) {
-    return !isNaN(parseFloat(n)) && isFinite(n);
+    return !isNaN(parseFloat(n)) && isFinite(n)
   }
 }
+
+//Executo a função criada,
+createNotes()
+
 
