@@ -24,16 +24,16 @@ function createNotes(){
     if (storageNotes[i] == 9){
         storageNotes[i] = "B"
     }
-    if (storageNotes[i] == 7){
+    if (storageNotes[i] == 8){
         storageNotes[i] = "C"
     }
-    if (storageNotes[i] == 6){
+    if (storageNotes[i] == 7){
         storageNotes[i] = "D"
     }
-    if (storageNotes[i] <= 5){
+    if (storageNotes[i] == 6){
         storageNotes[i] = "E"
     }
-    if (storageNotes[i] <= 3){
+    if (storageNotes[i] <= 5){
         storageNotes[i] = "F"
     }
 
