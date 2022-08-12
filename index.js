@@ -56,6 +56,6 @@ function isNumber(n) {
   }
 }
 
-//Executo a função criada,
+//Executo a função criada
 createNotes()
 
