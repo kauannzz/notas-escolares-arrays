@@ -5,8 +5,14 @@ let storageNotes = []
 
 //Se você errar na hora de por a nota, ele não vai contabilizar o restante das notas. Você pode inserir mas não irá sair os resultados (A..B..C..E...etc)
 function createNotes(){
+    let numberofNotes = prompt("Quantas notas você deseja digitar: ")
+    if (numberofNotes && isNumber(numberofNotes)){
+    }
+    else {kl
+        console.log('Ih, rapaiz..')
+    }
     //For que permite que o usuario consiga digitar 6X, não mais que isso. Pra alterar mude o *6* dentro do for
-    for (i = 0; i < 6; i++){
+    for (i = 0; i < numberofNotes ; i++){
     notes_console = prompt("Digite sua nota: ")
     //Verifiquei se o que o usuario digitou é realmente um número, se for ele insere dentro da array
     if (notes_console && isNumber(notes_console)){
@@ -40,6 +46,7 @@ function createNotes(){
         console.log("Ih, rapaiz..")
     }
 }
+
 console.log(storageNotes)
 
 
@@ -51,5 +58,4 @@ function isNumber(n) {
 
 //Executo a função criada,
 createNotes()
-
 
