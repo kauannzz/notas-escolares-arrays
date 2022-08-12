@@ -8,7 +8,7 @@ function createNotes(){
     let numberofNotes = prompt("Quantas notas você deseja digitar: ")
     if (numberofNotes && isNumber(numberofNotes)){
     }
-    else {kl
+    else {
         console.log('Ih, rapaiz..')
     }
     //For que permite que o usuario consiga digitar 6X, não mais que isso. Pra alterar mude o *6* dentro do for
