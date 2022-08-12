@@ -5,6 +5,8 @@ let storageNotes = []
 
 //Se você errar na hora de por a nota, ele não vai contabilizar o restante das notas. Você pode inserir mas não irá sair os resultados (A..B..C..E...etc)
 function createNotes(){
+
+    //Variavel pra identificar quantas notas o usuario quer digitar 
     let numberofNotes = prompt("Quantas notas você deseja digitar: ")
     if (numberofNotes && isNumber(numberofNotes)){
     }
